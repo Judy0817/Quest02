@@ -1,3 +1,12 @@
 Date		- 20190101
 Acount No	- 102344
-Balance		- 5004345.88
+Opening Balance	- 5004345.88
+
+Balance		- 5007645
+Balance		- 5014345
+Balance		- 5004845
+Balance		- 5008845
+Balance		- 5007645
+Balance		- 5007345
+Balance		- 5012345
+Balance		- 5007345

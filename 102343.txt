@@ -1,3 +1,12 @@
 Date		- 20190101
 Acount No	- 102343
-Balance		- 23450.44
+Opening Balance	- 23450.44
+
+Balance		- 24450
+Balance		- 30450
+Balance		- 26450
+Balance		- 24450
+Balance		- 32450
+Balance		- 33450
+Balance		- 28450
+Balance		- 48450

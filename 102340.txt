@@ -1,3 +1,14 @@
 Date		- 20190101
 Acount No	- 102340
-Balance		- 140000.00
+Opening Balance	- 140000.00
+
+Balance		- 148000
+Balance		- 141500
+Balance		- 140500
+Balance		- 144500
+Balance		- 140500
+Balance		- 141500
+Balance		- 140500
+Balance		- 148000
+Balance		- 142000
+Balance		- 140500

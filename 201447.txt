@@ -1,3 +1,11 @@
 Date		- 20190101
 Acount No	- 201447
-Balance		- 4773.77
+Opening Balance	- 4773.77
+
+Balance		- 5273
+Balance		- 8073
+Balance		- 6273
+Balance		- 6773
+Balance		- 14773
+Balance		- 9273
+Balance		- 13773

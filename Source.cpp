@@ -9,6 +9,7 @@
 #include <string>
 #include <iomanip>
 #include <vector>
+#include <conio.h>
 
 using namespace std;
 
@@ -37,6 +38,25 @@ using namespace std;
 
 	ofstream result("111111.txt", ofstream::app);
 	result.close();*/
+
+//-----------------------------string convertor to float---------------------//
+
+/*string balance = "20";
+double int_balance;
+stringstream ss;
+ss << balance;
+ss >> int_balance;
+
+string amount = "20.34";
+double int_amount;
+stringstream ss1;
+ss1 << amount;
+ss1 >> int_amount;
+
+cout << int_balance + int_amount << endl;
+*/
+
+//------------------------------------------------------------------------------//
 
 #define MAX_LINES 1000
 
@@ -68,10 +88,9 @@ int main()
 
 	fileBalance.close();
 
-	//------------------Get Line Info comma separate-----------------------------------------------------------//
+	//------------------Get Line Info comma separate balance sheet------------------------//  
 
-	string Date, AccNo,Balance;
-
+	string Date, AccNo,temp,Balance;
 
 	for (int i = 0; i < 11; i++)
 	{
@@ -81,10 +100,16 @@ int main()
 		getline(ss, AccNo, ',');
 		getline(ss, Balance, ',');
 
+		int flt_Balance;
+		stringstream ss1;
+		ss1 << Balance;
+		ss1 >> flt_Balance;
+		
 		ofstream myFiles(fileName[i], ofstream::app);
 		myFiles << "Date\t\t- "<<Date<<endl;
 		myFiles << "Acount No\t- " << AccNo << endl;
-		myFiles << "Balance\t\t- " << Balance << endl;
+		myFiles << "Opening Balance\t- " << Balance << endl<<endl;
+		//myFiles << flt_Balance<< endl;
 	}
 	
 	//--------------------get lines in the transaction text file into array--------------//
@@ -98,12 +123,14 @@ int main()
 		fileTransaction >> array2[lines2];
 		lines2++;
 	}
-	cout << array2[0];
+	cout << array2[0] << endl;
+
 	fileTransaction.close();
 
-	/*
-		
-	string type, amount,date,accNo;
+	
+	//------------------Get Line Info comma separate Transaction sheet------------------------//
+	string type, date,accNo,amount;
+
 	for (int j = 0; j < MAX_LINES; j++)
 	{
 		istringstream ss(array2[j]);
@@ -113,19 +140,57 @@ int main()
 		getline(ss, type, ',');
 		getline(ss, amount, ',');
 
+		int flt_Amount;
+		stringstream ss2;
+		ss2 << amount;
+		ss2 >> flt_Amount;
 
-		if (accNo == AccNo)
+		for (int i = 0; i < 11; i++)
 		{
-			for (int j = 0; j < 11; j++)
+			istringstream ss(array[i]);
+
+			getline(ss, Date, ',');
+			getline(ss, AccNo, ',');
+			getline(ss, Balance, ',');
+
+			int flt_Balance;
+			stringstream ss1;
+			ss1 << Balance;
+			ss1 >> flt_Balance;
+
+			if (accNo == AccNo)
 			{
-				ofstream myFiles(fileName[j], ofstream::app);
+				/*ofstream myFiles(fileName[i], ofstream::app);
 				myFiles << "Type\t\t- " << type << endl;
-				myFiles << "Amount\t\t- " << amount << endl;
+				myFiles << "Amount\t\t- " << amount << endl;*/
+
+				if (type == "1")
+				{
+					ofstream myFiles(fileName[i], ofstream::app);
+					//myFiles << "Type\t\t- Deposit " << endl;
+					flt_Balance = flt_Amount+ flt_Balance;
+					myFiles << "Balance\t\t- " << flt_Balance << endl;
+
+					/*ofstream myFiles2(fileName[0], ofstream::app);
+					flt_Balance = flt_Balance + flt_Amount;
+					myFiles2 << "Balance\t\t- " << flt_Balance << endl;*/
+				}
+
+				/*if (type == "2")
+				{
+
+					ofstream myFiles(fileName[i], ofstream::app);
+					//myFiles << "Type\t\t- Withdraw " << endl;
+					Balance = Balance - amount;
+					myFiles << "Balance\t\t- " << Balance << endl;
+				}*/
+
 			}
-			
+
+
 		}
-	}*/
 
 
+	}
 	
 }

@@ -1,3 +1,13 @@
 Date		- 20190101
 Acount No	- 102342
-Balance		- 442096.33
+Opening Balance	- 442096.33
+
+Balance		- 443596
+Balance		- 442596
+Balance		- 449096
+Balance		- 446596
+Balance		- 445096
+Balance		- 447096
+Balance		- 443096
+Balance		- 452096
+Balance		- 442596

@@ -1,3 +1,12 @@
 Date		- 20190101
 Acount No	- 102341
-Balance		- 345430.98
+Opening Balance	- 345430.98
+
+Balance		- 354430
+Balance		- 348730
+Balance		- 346430
+Balance		- 347430
+Balance		- 348430
+Balance		- 355430
+Balance		- 353430
+Balance		- 346430

@@ -1,3 +1,4 @@
 Date		- 20190101
 Acount No	- 111111
-Balance		- 1000000.00
+Opening Balance	- 1000000.00
+

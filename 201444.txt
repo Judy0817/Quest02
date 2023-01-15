@@ -1,3 +1,12 @@
 Date		- 20190101
 Acount No	- 201444
-Balance		- 3899.00
+Opening Balance	- 3899.00
+
+Balance		- 6399
+Balance		- 4399
+Balance		- 10899
+Balance		- 6399
+Balance		- 6899
+Balance		- 4399
+Balance		- 12899
+Balance		- 4399
