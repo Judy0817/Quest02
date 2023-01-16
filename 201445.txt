@@ -2,11 +2,3 @@ Date		- 20190101
 Acount No	- 201445
 Opening Balance	- 1345.11
 
-Balance		- 2845
-Balance		- 9345
-Balance		- 1845
-Balance		- 3345
-Balance		- 8345
-Balance		- 4645
-Balance		- 11345
-Balance		- 2845
